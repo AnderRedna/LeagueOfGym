@@ -43,7 +43,7 @@ async function getSummonerMatchByPuuid(summonerPuuid) {
     const matchInfo = await leagueJs.Match
       .gettingMatchIdsByPuuid(summonerPuuid, options);
       
-    return matchInfo.slice(0, 10);
+    return matchInfo;
   } catch (err) {
     console.log(err);
   }
