@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const LeagueJS = require('./node_modules/leaguejs/lib/LeagueJS.js');
-const leagueJs = new LeagueJS(process.env.serverKey || "RGAPI-1ed1c7d5-6c69-4630-90ce-b01cc112ef34", {PLATFORM_ID: 'BR1'})
+const leagueJs = new LeagueJS(process.env.serverKey, {PLATFORM_ID: 'BR1'})
 process.env.LEAGUE_API_PLATFORM_ID = 'BR1';
 
 const path = require('path');
