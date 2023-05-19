@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const LeagueJS = require('./node_modules/leaguejs/lib/LeagueJS.js');
+require('dotenv').config();
 const leagueJs = new LeagueJS(process.env.serverKey, {PLATFORM_ID: 'BR1'})
-process.env.LEAGUE_API_PLATFORM_ID = 'BR1';
 
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
@@ -18,12 +18,10 @@ app.get('/summoner/:name', async (req, res) => {
     console.log("Executando...")
     const summonerData = await leagueJs.Summoner.gettingByName(req.params.name);
     const matchesAndExercises = await getMatchesAndExercises(summonerData.puuid);
-    
     res.send({summonerData, matchesAndExercises});
     resetExercises();
   } catch (error) {
-    console.error(error);
-    res.status(500).send('An error occurred.');
+    res.status(404).send({error: error['statusCode']});
   }
 });
 
@@ -43,7 +41,7 @@ async function getSummonerMatchByPuuid(summonerPuuid) {
     const matchInfo = await leagueJs.Match
       .gettingMatchIdsByPuuid(summonerPuuid, options);
       
-    return matchInfo;
+    return matchInfo.slice(0, 10);
   } catch (err) {
     console.log(err);
   }
