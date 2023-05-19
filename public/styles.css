@@ -36,9 +36,6 @@ body{
 }
 
 
-
-
-
 .container {
 position: relative;
 width: 400px;
@@ -99,7 +96,8 @@ font-size: 28px;
 
 .player-infos{
 text-align: center;
-display: block;
+opacity: 0;
+scale: 0;
 }
 
 .player-infos img {
@@ -190,11 +188,11 @@ object-fit: cover;
   margin-top: 50px;
   scale: 0;
   opacity: 0;
-  display: none;
+  display: block;
 }
 
 .not-found img{
-  width: 70%;
+  width: 30%;
 }
 
 .not-found p{
