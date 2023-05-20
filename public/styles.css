@@ -233,12 +233,14 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: black;
+  padding: 0;
+  margin: 0;
 }
 
 footer img{
   padding:  0;
   margin: 0;
-  height: 20px;
-  background-color: red;
-  width: 90px;
+  margin-bottom: -2px;
+  height: 18px;
+  width: 100px;
 }
