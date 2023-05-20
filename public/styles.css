@@ -17,6 +17,50 @@ body {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
+.notice {
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #f2f2f2; /* You can use a light color here that blends with your website design. */
+  border-radius: 8px;
+  text-align: center; 
+}
+
+.notice p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333; /* Change this according to your design preference. */
+}
+
+.notice strong {
+  color: #d64541; /* Use a color that corresponds to the color scheme of League of Legends. */
+}
+
+.discord-invite {
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #7289da; /* This is the brand color of Discord. */
+  border-radius: 8px;
+  text-align: center; 
+}
+
+.discord-invite p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff; /* White color will provide a nice contrast on the Discord brand color background. */
+}
+
+.discord-invite a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.discord-invite strong {
+  color: #fff;
+}
+
+
 
 .loading-box {
   position: fixed;
