@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 app.get('/summoner/:name', async (req, res) => {
   try {
-    console.log("Executando...")
+    console.log("Executando para: " + req.params.name)
     const summonerData = await leagueJs.Summoner.gettingByName(req.params.name);
     const matchesAndExercises = await getMatchesAndExercises(summonerData.puuid);
     res.send({summonerData, matchesAndExercises});
