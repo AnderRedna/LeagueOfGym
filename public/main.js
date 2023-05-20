@@ -6,10 +6,17 @@ const playerDetails = document.querySelector('.player-details');
 const error404 = document.querySelector('.not-found');
 const loadingBox = document.querySelector('.loading-box');
 
-window.addEventListener('resize', () => {
-	let vh = window.innerHeight * 0.01;
-	document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
+function setVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Execute a função uma vez quando a página é carregada
+setVh();
+
+// Execute a função novamente sempre que a janela é redimensionada
+window.addEventListener('resize', setVh);
+
   
 
 search.addEventListener('click', async () => {
