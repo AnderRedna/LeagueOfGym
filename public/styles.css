@@ -241,3 +241,8 @@ footer img{
   margin-top: 5px;
   margin-left: 5px;
 }
+
+footer h4{
+  margin-top: auto;
+  margin-bottom: auto;
+}
