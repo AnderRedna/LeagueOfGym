@@ -221,30 +221,19 @@ object-fit: cover;
 
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 8px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+  justify-content: right;
   height: auto;
   width: 100%;
   position: absolute;
   bottom: 0;
   background-color: black;
-  padding: 10px 20px;
 }
 
 footer img{
-  background-color: red;
-  width: 200px;
-}
 
-footer h4{
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
+  padding:  0;
+  margin: 0;
+  height: 20px;
+  background-color: red;
+  width: 90px;
 }
