@@ -10,9 +10,12 @@
 body{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #06283D;
+  min-height: 100vh;
+  
 }
 
 .loading-box {
@@ -230,7 +233,6 @@ footer {
 }
 
 footer img{
-
   padding:  0;
   margin: 0;
   height: 20px;
