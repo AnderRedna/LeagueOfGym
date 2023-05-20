@@ -220,14 +220,24 @@ object-fit: cover;
 }
 
 footer {
+  display: flex;
   text-align: center;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 9px;
+  font-size: 8px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  height: 40px;
   width: 100%;
   position: absolute;
   bottom: 0;
+  justify-content: right;
+  background-color: black;
+}
+
+footer img{
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
