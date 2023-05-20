@@ -230,7 +230,7 @@ footer {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  height: 50px;
+  height: auto;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -239,6 +239,7 @@ footer {
 }
 
 footer img{
+  background-color: red;
   width: 200px;
 }
 
