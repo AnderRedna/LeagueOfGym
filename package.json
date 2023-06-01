@@ -6,7 +6,7 @@
   "author": "Ander",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.1.3",
     "express": "^4.18.2",
     "leaguejs": "^2.3.1",
     "nodemon": "^2.0.22"
